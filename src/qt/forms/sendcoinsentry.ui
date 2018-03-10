@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SendCoinsEntry</class>
+ <widget class="QWidget" name="SendCoinsEntry">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>676</width>
+    <height>128</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>128</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>128</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="BitcoinAmountField" name="payAmount">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>95</y>
+     <width>168</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pay_label">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>85</y>
+     <width>76</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>A&amp;mount:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="buddy">
+    <cstring>payAmount</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pay_label_2">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>76</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pay &amp;To:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="buddy">
+    <cstring>payTo</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="pay_label_3">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>43</y>
+     <width>76</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Label:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <property name="buddy">
+    <cstring>addAsLabel</cstring>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>43</y>
+     <width>728</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>85</y>
+     <width>728</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>77</x>
+     <y>1</y>
+     <width>1</width>
+     <height>128</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="pasteButton">
+   <property name="geometry">
+    <rect>
+     <x>596</x>
+     <y>10</y>
+     <width>23</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Paste address from clipboard</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Alt+P</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>619</x>
+     <y>10</y>
+     <width>23</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Remove this recipient</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QValidatedLineEdit" name="payTo">
+   <property name="geometry">
+    <rect>
+     <x>91</x>
+     <y>9</y>
+     <width>472</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>The address to send the payment to  (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</string>
+   </property>
+   <property name="maxLength">
+    <number>34</number>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="addressBookButton">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>10</y>
+     <width>23</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Choose address from address book</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </widget>
+  <widget class="QValidatedLineEdit" name="addAsLabel">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>91</x>
+     <y>52</y>
+     <width>551</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Enter a label for this address to add it to your address book</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QValidatedLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qvalidatedlineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>BitcoinAmountField</class>
+   <extends>QLineEdit</extends>
+   <header>bitcoinamountfield.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
