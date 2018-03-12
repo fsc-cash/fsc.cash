@@ -5,12 +5,8 @@ FoodSafetyCoin is a pure PoS coin which generates coins through PoS blocks. Exce
 Equal distribution to the WHOLE community. Each person gets 1 mil coins, including each person in the dev team. Dev team gets absolutely no more than anyone else! It is the community coin! While the dev team will maintain and enhance the code and fix any issues, it is the community which will promote and market the coin.  
 
 FoodSafetyCoin also adopts a variable PoS rate with the following annual interest rate:
-Year-1: 30%
-Year-2: 20%
-Year-3: 10%
-Year-4: 5%
-Year-5: 2%
-Starting from Year-6: 1% annual interest for maintnance. 
+Year-1: 5%
+ 
 
 - 60 sec block time
 - diff retarget each block
